@@ -1,0 +1,62 @@
+body{
+    background-color: hsl(233, 47%, 7%);
+}
+*{ 
+    overflow: auto;
+
+}
+.section{
+    display: grid;
+    width: 70%;
+    background-color: hsl(244, 38%, 16%);
+    color: white;
+    margin: auto;
+    margin-top: 50%;
+    margin-bottom: 50%;
+    grid-template-areas: "text image";
+    grid-template-columns: 1fr 1fr;
+   
+}
+.text{
+    grid-area: text;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "text-title"
+    "text-paragraphe"
+    "stat";
+    
+}
+.text-title{
+    grid-area: text-title;
+}
+.text-paragraphe{
+    grid-area: text-paragraphe;
+}
+.stat{
+    display: grid;
+    grid-area: stat;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "stat1 stat2 stat3 ";
+}
+.stat1{
+    grid-area: stat1;
+}
+.stat2{
+    grid-area: stat2;
+}
+.stat3{
+    grid-area: stat3;
+}
+.image{
+    grid-area: image;
+    width: 100%;
+    height: 100% ;  
+    overflow: hidden;
+    
+}
+.image img{
+    
+    width: 100%;
+    
+}
