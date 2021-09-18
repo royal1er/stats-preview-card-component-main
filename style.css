@@ -1,6 +1,7 @@
 body{
     background-color: hsl(233, 47%, 7%);
 }
+<<<<<<< HEAD
 
 *{
     overflow: auto;
@@ -37,6 +38,25 @@ body{
 
 .text{
     padding: 50px 25px;
+=======
+*{ 
+    overflow: auto;
+
+}
+.section{
+    display: grid;
+    width: 70%;
+    background-color: hsl(244, 38%, 16%);
+    color: white;
+    margin: auto;
+    margin-top: 50%;
+    margin-bottom: 50%;
+    grid-template-areas: "text image";
+    grid-template-columns: 1fr 1fr;
+   
+}
+.text{
+>>>>>>> 430609f82a47a0716c463f08a8266f1820e7e7ee
     grid-area: text;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
@@ -44,6 +64,7 @@ body{
     "text-title"
     "text-paragraphe"
     "stat";
+<<<<<<< HEAD
 }
 
 
@@ -59,10 +80,21 @@ body{
     font-size: 25px;
 }
 
+=======
+    
+}
+.text-title{
+    grid-area: text-title;
+}
+.text-paragraphe{
+    grid-area: text-paragraphe;
+}
+>>>>>>> 430609f82a47a0716c463f08a8266f1820e7e7ee
 .stat{
     display: grid;
     grid-area: stat;
     grid-template-columns: 1fr 1fr 1fr;
+<<<<<<< HEAD
     grid-template-areas: "stat1 stat2 stat3";
     
 }
@@ -91,3 +123,28 @@ body{
     display: block;
 }
 
+=======
+    grid-template-areas: "stat1 stat2 stat3 ";
+}
+.stat1{
+    grid-area: stat1;
+}
+.stat2{
+    grid-area: stat2;
+}
+.stat3{
+    grid-area: stat3;
+}
+.image{
+    grid-area: image;
+    width: 100%;
+    height: 100% ;  
+    overflow: hidden;
+    
+}
+.image img{
+    
+    width: 100%;
+    
+}
+>>>>>>> 430609f82a47a0716c463f08a8266f1820e7e7ee
